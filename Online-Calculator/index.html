@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced Online Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="/calci.ico">
+    <script src="https://kit.fontawesome.com/742666944d.js" crossorigin="anonymous"></script>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+
+</head>
+<body>
+    <!-- Calculator container -->
+    <div class="calculator">
+        <h4 style="color:white; padding-bottom:2rem; padding-top:2rem;"><u>ONLINE-CALCULATOR</u></h4>
+        <!-- Display input field -->
+        <input type="text" id="display" placeholder="0000000000000000000" readonly>
+        <!-- Calculator keys grid -->
+        <div class="keys">
+            <!-- Number and basic operation buttons -->
+            <button onclick="addToDisplay('7')">7</button>
+            <button onclick="addToDisplay('8')">8</button>
+            <button onclick="addToDisplay('9')">9</button>
+            <button onclick="addToDisplay('+')">+</button>
+            <button onclick="addToDisplay('4')">4</button>
+            <button onclick="addToDisplay('5')">5</button>
+            <button onclick="addToDisplay('6')">6</button>
+            <button onclick="addToDisplay('-')">-</button>
+            <button onclick="addToDisplay('1')">1</button>
+            <button onclick="addToDisplay('2')">2</button>
+            <button onclick="addToDisplay('3')">3</button>
+            <button onclick="addToDisplay('*')">*</button>
+            <button onclick="addToDisplay('0')">0</button>
+            <button onclick="addToDisplay('.')">.</button>
+              <!-- Equals button -->
+              <button onclick="calculate()"style="background-color: orange;">=</button>
+            <!-- Clear and division buttons -->
+            <button onclick="clearDisplay()" style="background-color: orange;">Clear</button>
+          
+
+            <button onclick="addToDisplay('/')">/</button>
+            
+            <!-- Advanced operation buttons -->
+            <button onclick="addToDisplay('Math.sin(')">sin</button>
+            <button onclick="addToDisplay('Math.cos(')">cos</button>
+            <button onclick="addToDisplay('Math.tan(')">tan</button>
+            <button onclick="addToDisplay('Math.log10(')">log</button>
+            <button onclick="addToDisplay('Math.sqrt(')">sqrt</button>
+            <button onclick="addToDisplay('Math.pow(')">^</button>
+            <!--calculator icon-->
+           <i class="fa-solid fa-calculator" style="color: #f5f5f5;"></i>
+        </div>
+    </div>
+ 
+
+    <!-- JavaScript file for calculator functionality -->
+    <script src="script.js"></script>
+</body>
+</html>
